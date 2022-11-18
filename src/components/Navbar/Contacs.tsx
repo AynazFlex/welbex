@@ -42,8 +42,14 @@ const ContacsElem = styled.div<{device?: string}>`
             display: 'flex',
             'flex-wrap': 'wrap',
             'justify-content': 'center',
-            gap: '10px',
+            gap: '15px',
             margin: '50px 0 0 0',
+            '& > a': {
+                margin: '0',
+            },
+            '& > span': {
+                margin: '0',
+            }
           }
         : { display: "none" }}
   }
