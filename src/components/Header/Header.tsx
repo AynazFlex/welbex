@@ -1,5 +1,6 @@
 import { FC } from "react";
 import styled from "styled-components";
+import { Ball_1, Ball_2, Ball_3, Ball_4 } from "./BackgroundHeader";
 import Services from "./Services";
 
 const HeaderBlock = styled.header`
@@ -31,6 +32,13 @@ const HeaderBlock = styled.header`
   @media (max-width: 630px) {
     flex-direction: column;
     gap: 45px;
+  }
+
+  @media (max-width: 340px) {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    backdrop-filter: blur(7.5px);
   }
 `;
 
@@ -88,7 +96,7 @@ const RightSideElem = styled.aside`
 
 const ButtonElem = styled.div`
   display: flex;
-  margin: 82px 0 0 0;
+  margin: 61px 0 0 0;
   justify-content: flex-end;
   & > button {
     display: block;
@@ -106,7 +114,7 @@ const ButtonElem = styled.div`
   }
 
   @media (max-width: 1172px) {
-    margin: 60px 0 0 0;
+    margin: 40px 0 0 0;
   }
 
   @media (max-width: 630px) {
@@ -145,6 +153,10 @@ const Header: FC = () => (
         <button>Получить консультацию</button>
       </ButtonElem>
     </RightSideElem>
+    <Ball_1 />
+    <Ball_2 />
+    <Ball_3 />
+    <Ball_4 />
   </HeaderBlock>
 );
 

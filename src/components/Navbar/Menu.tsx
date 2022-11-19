@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styled from "styled-components";
 import { BiMenu } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
@@ -43,6 +43,12 @@ const MobileMenuElem = styled.div<{ left: string }>`
 
 const MobileMenu: FC = () => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    open ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
+
+    return () => {document.body.style.overflow = 'auto'}
+  }, [open])
 
   return (
     <>

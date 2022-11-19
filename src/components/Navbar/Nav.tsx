@@ -5,9 +5,8 @@ import MobileMenu from "./Menu";
 import Links from "./Links";
 import Contacs from "./Contacs";
 
-const NavBlock = styled.nav<{ margin?: string; padding?: string }>`
+const NavBlock = styled.nav<{ padding?: string }>`
   display: flex;
-  margin: ${({ margin }) => margin || 0};
   padding: ${({ padding }) => padding || 0};
   color: #e4e5ea;
 
@@ -58,7 +57,7 @@ const LogoElem = styled.a.attrs({
 
 const Nav: FC = () => (
   <>
-    <NavBlock margin="46px 0 0 0">
+    <NavBlock padding="46px 0 0 0">
       <LogoElem>
         <img src={logo} alt="welbex" />
         <span>крупный интегратор CRM в Росcии и ещё 8 странах</span>
