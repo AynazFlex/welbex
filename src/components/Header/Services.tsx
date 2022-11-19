@@ -55,6 +55,7 @@ const ServiceMobile = styled.ul`
     &:before {
       content: "";
       display: block;
+      box-sizing: border-box;
       height: 2px;
       width: 10px;
       background: linear-gradient(to right, #fcb045, #fd1d1d);

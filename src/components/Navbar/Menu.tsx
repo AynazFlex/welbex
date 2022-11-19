@@ -46,7 +46,7 @@ const MobileMenu: FC = () => {
 
   return (
     <>
-      <BurgerElem position="fixed" onClick={() => setOpen(true)}>
+      <BurgerElem position="absolute" onClick={() => setOpen(true)}>
         <BiMenu size="30px" color="#e4e5ea" />
       </BurgerElem>
       <MobileMenuElem left={open ? "0px" : "100%"}>
