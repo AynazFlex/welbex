@@ -155,6 +155,7 @@ const CopyRightElem = styled.div`
     gap: 5px;
     color: #E4E5EA;
     margin-top: 33px;
+    text-align: right;
 
     & > a {
         color: inherit;
@@ -163,6 +164,7 @@ const CopyRightElem = styled.div`
     @media (max-width: 440px) {
         align-items: start;
         margin-top: 50px;
+        text-align: left;
     }
 `
 
